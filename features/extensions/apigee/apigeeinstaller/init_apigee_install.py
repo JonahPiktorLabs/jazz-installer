@@ -230,7 +230,7 @@ def deploy_common(host, org, env, username, password, contentUrl, contentBranch)
 
 def install_proxy(secretKey, accessKey, region, lambdaARN, host, org,
                   envProd, envDev, build, username, password,
-                  contentUrl='https://github.com/tmobile/jazz-content', contentBranch='master'):
+                  contentUrl='https://github.com/JonahPiktorLabs/jazz-content', contentBranch='master'):
     """Configure the external Apigee proxy and upload shared flows.
 
     Keyword arguments:

@@ -5,7 +5,7 @@ variable "region" { type = "string" default = "us-east-1" }
 variable "github_branch" { type = "string" default = "development" }
 variable "github_repo" {
   type = "string"
-  default = "https://github.com/tmobile/jazz.git"
+  default = "https://github.com/JonahPiktorLabs/jazz.git"
 }
 variable "aws_access_key" { type = "string" default = "aws_access_key" }
 variable "aws_secret_key" { type = "string" default = "aws_secret_key" }
@@ -33,7 +33,7 @@ variable "chefDestDir" {
 }
 variable "contentRepo" {
   type = "string"
-  default = "https://github.com/tmobile/jazz-content.git"
+  default = "https://github.com/JonahPiktorLabs/jazz-content.git"
 }
 #
 # Jenkins related variables
@@ -117,11 +117,11 @@ variable "aws_tags" { type = "string" }
 variable "network_range" { type = "string" default = "0.0.0.0/0"}
 variable "jenkins_docker_image" {
   type = "string"
-  default = "jazzserverless/jazzoss-jenkins:1.0.1"
+  default = "jazzserverless/jazzoss-jenkins:latest"
 }
 variable "gitlab_docker_image" {
   type = "string"
-  default = "gitlab/gitlab-ce:13.1.1-ce.0"
+  default = "gitlab/gitlab-ce:latest"
 }
 variable "codeq_docker_image" {
   type = "string"

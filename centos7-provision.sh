@@ -13,7 +13,7 @@
 
 TERRAFORM_URL="https://releases.hashicorp.com/terraform/0.11.13/terraform_0.11.13_linux_amd64.zip"
 ATLASSIAN_CLI_URL="https://bobswift.atlassian.net/wiki/download/attachments/16285777/atlassian-cli-6.7.1-distribution.zip"
-INSTALLER_GITHUB_URL="https://github.com/tmobile/jazz-installer.git"
+INSTALLER_GITHUB_URL="https://github.com/JonahPiktorLabs/jazz-installer.git"
 
 # Installation directory
 INSTALL_DIR=$(pwd)

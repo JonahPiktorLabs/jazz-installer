@@ -7,7 +7,7 @@ from extensions.splunk.setup import install
 @click.group()
 @click.version_option()
 def cli():
-    """Installs splunk extension for the Jazz Serverless Development Platform (https://github.com/tmobile/jazz)"""
+    """Installs splunk extension for the Jazz Serverless Development Platform (https://github.com/JonahPiktorLabs/jazz)"""
     pass
 
 

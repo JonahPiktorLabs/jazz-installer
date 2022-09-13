@@ -1,7 +1,7 @@
 #!/bin/bash
 #TODO this should be ported to python
 
-securityGroupIds=$1
+Ids=$1
 subnetIds=$2
 iamRoleARN=$3
 stackprefix=$4
@@ -121,7 +121,7 @@ do
 
 # shellcheck disable=SC2086
 #Updating to service catalog
-provider_runtime="nodejs10.x"
+provider_runtime="nodejs14.x"
 pushToCatalog "$tablename" "$element" "$service_type" "${deployment_targets[@]}" "$provider_runtime"
 
 done

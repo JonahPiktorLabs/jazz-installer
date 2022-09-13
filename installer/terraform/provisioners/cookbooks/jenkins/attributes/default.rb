@@ -10,7 +10,7 @@ default['jenkins']['clicommand'] = "'java -jar #{node['jenkins']['clientjar']} -
 
 default['region'] = 'us-east-1'
 default['git_plugin_branch'] = 'master'
-default['git_content_repo'] = 'https://github.com/tmobile/jazz-content/raw'
+default['git_content_repo'] = 'https://github.com/JonahPiktorLabs/jazz-content/raw'
 default['git_content_plugins'] = 'jenkins/staticplugins/plugins.tar'
 default['git_content_xmls'] = 'jenkins/files/xmls.tar'
 

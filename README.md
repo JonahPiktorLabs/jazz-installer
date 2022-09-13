@@ -1,6 +1,6 @@
 ![Jazz Logo](logo.png)
 
-[![Build Status](https://travis-ci.org/tmobile/jazz-installer.svg?branch=master)](https://travis-ci.org/tmobile/jazz-installer)
+[![Build Status](https://travis-ci.org/JonahPiktorLabs/jazz-installer.svg?branch=master)](https://travis-ci.org/JonahPiktorLabs/jazz-installer)
 [![Gitter](https://img.shields.io/gitter/room/badges/shields.svg)](https://gitter.im/TMO-OSS/Jazz)
 [![Slack Chat](https://img.shields.io/badge/Chat-Slack-ff69b4.svg)](https://tmo-oss-getinvite.herokuapp.com/)
 
@@ -22,7 +22,7 @@ Jazz is [open-sourced](http://opensource.t-mobile.com) and under active developm
 
 ## Install
 
-You can [install Jazz](https://github.com/tmobile/jazz-installer/wiki) in your account using the automated installer.
+You can [install Jazz](https://github.com/JonahPiktorLabs/jazz-installer/wiki) in your account using the automated installer.
 
 ## Try Jazz!
 You can try out public preview version of Jazz by registering with your email address [here](http://try.tmo-jazz.net). You will need a registration code which can be requested by joining [slack](https://tmo-oss-getinvite.herokuapp.com/). Once in slack, go to `#jazz-serverless` channel to get a working registration code.
@@ -36,7 +36,7 @@ Ensure you have a standard install of Python 3.6 or greater, with `pip` and `set
 Run:
 
 ```
-git clone git@github.com:tmobile/jazz-installer.git
+git clone git@github.com:JonahPiktorLabs/jazz-installer.git
 cd jazz-installer
 python3 -m virtualenv env && source env/bin/activate
 pip install -r requirements.txt
@@ -55,7 +55,7 @@ Options:
 python Installer.py
 ```
 
-For more details, see the [Wiki](https://github.com/tmobile/jazz-installer/wiki).
+For more details, see the [Wiki](https://github.com/JonahPiktorLabs/jazz-installer/wiki).
 
 ## Development
 If you're interested in submitting a PR, it would be a good idea to set up your editor/IDE to use the following checkers:

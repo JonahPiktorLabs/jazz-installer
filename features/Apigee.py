@@ -8,7 +8,7 @@ from extensions.apigee.uninstall import uninstall
 @click.group()
 @click.version_option()
 def cli():
-    """Installs Apigee extension for the Jazz Serverless Development Platform (https://github.com/tmobile/jazz)"""
+    """Installs Apigee extension for the Jazz Serverless Development Platform (https://github.com/JonahPiktorLabs/jazz)"""
     pass
 
 

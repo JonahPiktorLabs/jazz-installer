@@ -8,7 +8,7 @@ from extensions.azure.uninstall import uninstall
 @click.group()
 @click.version_option()
 def cli():
-    """Azure extension for the Jazz Serverless Development Platform (https://github.com/tmobile/jazz)"""
+    """Azure extension for the Jazz Serverless Development Platform (https://github.com/JonahPiktorLabs/jazz)"""
     pass
 
 

@@ -9,7 +9,7 @@ from extensions.multiaccount.uninstall import uninstall
 @click.version_option()
 def cli():
     """Installs the MultiAccount extension for the Jazz Serverless Development Platform \
-     (https://github.com/tmobile/jazz)"""
+     (https://github.com/JonahPiktorLabs/jazz)"""
     pass
 
 

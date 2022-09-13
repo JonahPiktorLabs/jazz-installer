@@ -9,7 +9,7 @@ from extensions.tvault.uninstall import uninstall
 @click.version_option()
 def cli():
     """Installs the Tvault extension for the Jazz Serverless Development Platform \
-     (https://github.com/tmobile/jazz)"""
+     (https://github.com/JonahPiktorLabs/jazz)"""
     pass
 
 
