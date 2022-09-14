@@ -11,7 +11,7 @@ resource "aws_rds_cluster" "casbin" {
   preferred_backup_window = "07:00-09:00"
   skip_final_snapshot = true
   engine                  = "aurora-mysql"
-  engine_version          = "5.7.12"
+  engine_version          = "5.7.mysql_aurora.2.10.2"
   vpc_security_group_ids  = ["${aws_security_group.acl_sg.id}"]
   db_subnet_group_name    = "${aws_db_subnet_group.casbin_subnet_group.name}"
 
@@ -24,7 +24,7 @@ resource "aws_rds_cluster_instance" "casbin-instance" {
   identifier              = "${var.envPrefix}-${var.acl_db_name}"
   instance_class          = "db.t2.small"
   engine                  = "aurora-mysql"
-  engine_version          = "5.7.12"
+  engine_version          = "5.7.mysql_aurora.2.10.2"
   db_subnet_group_name    = "${aws_db_subnet_group.casbin_subnet_group.name}"
   publicly_accessible     = true
   tags = "${merge(var.additional_tags, local.common_tags)}"
@@ -35,6 +35,7 @@ resource "aws_security_group" "acl_sg" {
     name_prefix = "${var.envPrefix}"
     description = "Aurora MySQL access"
     revoke_rules_on_delete = true
+    "{varckerizedJen.dokins == 1 ? join(" ", data.aws_vpc.vpc_data
     vpc_id = "${var.dockerizedJenkins == 1 ? join(" ", data.aws_vpc.vpc_data.*.id) : join(" ", data.aws_vpc.default.*.id) }"
     lifecycle {
      create_before_destroy = true

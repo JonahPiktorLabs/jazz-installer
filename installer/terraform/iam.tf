@@ -1,6 +1,6 @@
 resource "aws_iam_role_policy_attachment" "lambdafullaccess" {
   role       = "${aws_iam_role.platform_role.name}"
-  policy_arn = "arn:aws:iam::aws:policy/AWSLambdaFullAccess"
+  policy_arn = "arn:aws:iam::aws:policy/AWSLambda_FullAccess"
 }
 
 resource "aws_iam_role_policy_attachment" "apigatewayinvokefullAccess" {

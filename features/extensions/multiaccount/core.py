@@ -325,7 +325,7 @@ def createplatformrole(iamclient, name, role_document, tags):
              PolicyDocument=json.dumps(role_inline)
              )
     attach_role(iamclient, name, 'arn:aws:iam::aws:policy/service-role/AWSLambdaBasicExecutionRole')
-    attach_role(iamclient, name, 'arn:aws:iam::aws:policy/AWSLambdaFullAccess')
+    attach_role(iamclient, name, 'arn:aws:iam::aws:policy/AWSLambda_FullAccess')
     attach_role(iamclient, name, 'arn:aws:iam::aws:policy/AmazonAPIGatewayInvokeFullAccess')
     attach_role(iamclient, name, 'arn:aws:iam::aws:policy/AmazonKinesisFullAccess')
     attach_role(iamclient, name, 'arn:aws:iam::aws:policy/AmazonS3FullAccess')
