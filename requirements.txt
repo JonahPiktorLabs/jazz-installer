@@ -25,3 +25,4 @@ six
 terraform-external-data
 urllib3
 webencodings
+test
