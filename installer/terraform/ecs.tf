@@ -687,7 +687,7 @@ resource "null_resource" "health_check_jenkins" {
   count = "${var.dockerizedJenkins}"
   depends_on = ["aws_ecs_service.ecs_service_jenkins"]
   provisioner "local-exec" {
-    command = "python ${var.healthCheck_cmd} ${aws_alb_target_group.alb_target_group_jenkins.arn}"
+    command = "python3 ${var.healthCheck_cmd} ${aws_alb_target_group.alb_target_group_jenkins.arn}"
   }
 }
 
@@ -695,7 +695,7 @@ resource "null_resource" "health_check_gitlab" {
   count = "${var.scmgitlab}"
   depends_on = ["aws_ecs_service.ecs_service_gitlab"]
   provisioner "local-exec" {
-    command = "python ${var.healthCheck_cmd} ${aws_alb_target_group.alb_target_group_gitlab.arn}"
+    command = "python3 ${var.healthCheck_cmd} ${aws_alb_target_group.alb_target_group_gitlab.arn}"
   }
 }
 
@@ -703,20 +703,20 @@ resource "null_resource" "health_check_codeq" {
   count = "${var.dockerizedSonarqube}"
   depends_on = ["aws_ecs_service.ecs_service_codeq"]
   provisioner "local-exec" {
-    command = "python ${var.healthCheck_cmd} ${aws_alb_target_group.alb_target_group_codeq.arn}"
+    command = "python3 ${var.healthCheck_cmd} ${aws_alb_target_group.alb_target_group_codeq.arn}"
   }
 }
 
 resource "null_resource" "health_check_es" {
   depends_on = ["aws_ecs_service.ecs_service_es"]
   provisioner "local-exec" {
-    command = "python ${var.healthCheck_cmd} ${aws_alb_target_group.alb_target_group_es.arn}"
+    command = "python3 ${var.healthCheck_cmd} ${aws_alb_target_group.alb_target_group_es.arn}"
   }
 }
 
 resource "null_resource" "health_check_kibana" {
   depends_on = ["aws_ecs_service.ecs_service_kibana"]
   provisioner "local-exec" {
-    command = "python ${var.healthCheck_cmd} ${aws_alb_target_group.alb_target_group_kibana.arn}"
+    command = "python3 ${var.healthCheck_cmd} ${aws_alb_target_group.alb_target_group_kibana.arn}"
   }
 }

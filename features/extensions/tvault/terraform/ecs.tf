@@ -188,14 +188,14 @@ resource "aws_ecs_service" "ecs_service_consul" {
 resource "null_resource" "health_check_tvault" {
   depends_on = ["aws_ecs_service.ecs_service_tvault"]
   provisioner "local-exec" {
-    command = "python ${var.healthCheck_cmd} ${aws_alb_target_group.alb_target_group_tvault.arn}"
+    command = "python3 ${var.healthCheck_cmd} ${aws_alb_target_group.alb_target_group_tvault.arn}"
   }
 }
 
 resource "null_resource" "health_check_consul" {
   depends_on = ["aws_ecs_service.ecs_service_consul"]
   provisioner "local-exec" {
-    command = "python ${var.healthCheck_cmd} ${aws_alb_target_group.alb_target_group_consul.arn}"
+    command = "python3 ${var.healthCheck_cmd} ${aws_alb_target_group.alb_target_group_consul.arn}"
   }
 }
 

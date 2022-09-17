@@ -21,7 +21,21 @@ Jazz is [open-sourced](http://opensource.t-mobile.com) and under active developm
 [Watch the video preview here.](https://www.youtube.com/watch?v=6Kp1yxMjn1k)
 
 ## Install
-
+New Install Instructions: 
+  - ssh into ubuntu EC2 instance
+  - sudo apt install python3-pip
+  - git clone https://github.com/tmobile/jazz-installer.git
+  - in jazz-installer folder, chmod +x ubuntu-provision.sh
+  - ./ubuntu-provision.sh
+  - wget https://releases.hashicorp.com/terraform/0.11.15/terraform_0.11.15_linux_amd64.zip
+  - unzip terraform_0.11.15_linux_amd64.zip
+  - chmod +x terraform
+  - sudo mv terraform /usr/local/bin 
+  - pip3 install virtualenv
+  - python3 -m virtualenv env && source env/bin/activate
+  - pip3 install -r requirements.txt
+  - python3 Installer.py install --stackprefix jazzsandbox --adminemail jazzownershipteam@gmail.com --region us-west-2 scenario3
+  
 You can [install Jazz](https://github.com/JonahPiktorLabs/jazz-installer/wiki) in your account using the automated installer.
 
 ## Try Jazz!
