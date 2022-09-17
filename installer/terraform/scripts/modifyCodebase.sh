@@ -52,7 +52,7 @@ function pushToCatalog {
       \"SERVICE_CREATED_BY\":{\"S\":\"$jazz_admin\"},
       \"SERVICE_DOMAIN\":{\"S\":\"jazz\"},
       \"SERVICE_NAME\":{\"S\":\"$service_name\"},
-      \"SERVICE_RUNTIME\":{\"S\":\"$provider_runtime\"},
+      \"SERVICE_RUNTIME\":{\"S\":\"nodejs14.x\"},
       \"SERVICE_STATUS\":{\"S\":\"active\"},
       \"TIMESTAMP\":{\"S\":\"$timestamp\"},
       \"SERVICE_TYPE\":{\"S\":\"$service_type\"},
@@ -80,7 +80,7 @@ function pushToCatalog {
                   \"subnetIds\":{\"S\":\"$subnetIds\"},
                   \"iamRoleARN\":{\"S\":\"$iamRoleARN\"},
                   \"providerMemorySize\":{\"S\":\"256\"},
-                  \"providerRuntime\":{\"S\":\"$provider_runtime\"},
+                  \"providerRuntime\":{\"S\":\"nodejs14.x\"},
                   \"providerTimeout\":{\"S\":\"160\"}
 
         }
