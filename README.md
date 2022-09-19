@@ -22,6 +22,7 @@ Jazz is [open-sourced](http://opensource.t-mobile.com) and under active developm
 
 ## Install
 New Install Instructions: 
+  - Create new EC2 Ubuntu instance
   - ssh into ubuntu EC2 instance
   - sudo apt install python3-pip
   - git clone https://github.com/tmobile/jazz-installer.git
