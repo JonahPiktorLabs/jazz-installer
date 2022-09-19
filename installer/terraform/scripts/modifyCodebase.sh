@@ -1,7 +1,7 @@
 #!/bin/bash
 #TODO this should be ported to python
 
-Ids=$1
+securityGroupIds=$1
 subnetIds=$2
 iamRoleARN=$3
 stackprefix=$4
